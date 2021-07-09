@@ -1,113 +1,49 @@
 export const links = [
   {
-    label: "Home",
-    icon: "HomeIcon",
-    href: "/",
+    label: 'Home',
+    icon: 'HomeIcon',
+    href: '/',
   },
   {
-    label: "Trade",
-    icon: "TradeIcon",
+    label: 'Trade',
+    icon: 'TradeIcon',
     items: [
       {
-        label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
+        label: 'Exchange',
+        href: 'https://swap.kudex.finance/',
       },
       {
-        label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
+        label: 'Liquidity',
+        href: 'https://swap.kudex.finance/#/pool',
       },
     ],
   },
   {
-    label: "Farms",
-    icon: "FarmIcon",
-    href: "/farms",
+    label: 'Farms',
+    icon: 'FarmIcon',
+    href: '/farms',
   },
   {
-    label: "Pools",
-    icon: "PoolIcon",
-    href: "/syrup",
+    label: 'Pools',
+    icon: 'PoolIcon',
+    href: '/pools',
   },
   {
-    label: "Lottery",
-    icon: "TicketIcon",
-    href: "/lottery",
+    label: 'Request Listing',
+    icon: 'HandshakeIcon',
+    href: 'https://t.me/Schizonacci',
   },
   {
-    label: "NFT",
-    icon: "NftIcon",
-    href: "/nft",
-  },
-  {
-    label: "Profile & Teams",
-    icon: "GroupsIcon",
+    label: 'More',
+    icon: 'MoreIcon',
     items: [
       {
-        label: "Leaderboard",
-        href: "/",
+        label: 'Github',
+        href: 'https://github.com/kudexkcc/',
       },
       {
-        label: "YourProfile",
-        href: "/",
-      },
-    ],
-    calloutClass: "rainbow",
-  },
-  {
-    label: "Info",
-    icon: "InfoIcon",
-    items: [
-      {
-        label: "Overview",
-        href: "https://pancakeswap.info",
-      },
-      {
-        label: "Tokens",
-        href: "https://pancakeswap.info/tokens",
-      },
-      {
-        label: "Pairs",
-        href: "https://pancakeswap.info/pairs",
-      },
-      {
-        label: "Accounts",
-        href: "https://pancakeswap.info/accounts",
-      },
-    ],
-  },
-  {
-    label: "IFO",
-    icon: "IfoIcon",
-    items: [
-      {
-        label: "Next",
-        href: "/ifo",
-      },
-      {
-        label: "History",
-        href: "/ifo/history",
-      },
-    ],
-  },
-  {
-    label: "More",
-    icon: "MoreIcon",
-    items: [
-      // {
-      //   label: "Voting",
-      //   href: "https://voting.pancakeswap.finance",
-      // },
-      {
-        label: "Github",
-        href: "https://github.com/goosedefi/",
-      },
-      {
-        label: "Docs",
-        href: "https://goosedefi.gitbook.io/goose-finance/",
-      },
-      {
-        label: "Blog",
-        href: "https://goosefinance.medium.com/",
+        label: 'Docs',
+        href: 'https://docs.kudex.finance/',
       },
     ],
   },

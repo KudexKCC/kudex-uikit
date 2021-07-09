@@ -27,6 +27,7 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
       ) : (
         <Button
           size="sm"
+          className="kudex-btn"
           onClick={() => {
             onPresentConnectModal();
           }}
