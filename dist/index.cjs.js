@@ -2330,7 +2330,7 @@ var PanelFooter = function (_a) {
             React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
             React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, cakePriceUsd.toFixed(5) + " KCS"))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
         React__default['default'].createElement(SettingsEntry, null,
-            React__default['default'].createElement(Dropdown, { position: "top-right", target: React__default['default'].createElement(Button, { variant: "text", startIcon: React__default['default'].createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
+            React__default['default'].createElement(Dropdown, { position: "top-right", target: React__default['default'].createElement(Button, { className: "language-btn", variant: "text", startIcon: React__default['default'].createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
                     React__default['default'].createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React__default['default'].createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
                 // Safari fix
                 style: { minHeight: "32px", height: "auto" } }, lang.language)); })),
