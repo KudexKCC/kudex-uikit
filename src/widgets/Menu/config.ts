@@ -67,6 +67,10 @@ export const socials = [
         href: "https://t.me/KudexKCCFR",
       },
       {
+        label: "日本語",
+        href: "https://t.me/KudexKCCJP",
+      },
+      {
         label: "中文",
         href: "https://t.me/KudexKCCCN",
       },
@@ -78,7 +82,6 @@ export const socials = [
         label: "русский",
         href: "https://t.me/KudexKCCRU",
       },
-
     ],
   },
   {
