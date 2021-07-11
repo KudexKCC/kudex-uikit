@@ -56,8 +56,29 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/kudexkcc",
+        href: "https://t.me/KudexKCC",
       },
+      {
+        label: "Deutsche",
+        href: "https://t.me/KudexKCCDE",
+      },
+      {
+        label: "Français",
+        href: "https://t.me/KudexKCCFR",
+      },
+      {
+        label: "中文",
+        href: "https://t.me/KudexKCCCN",
+      },
+      {
+        label: "ภาษาไทย",
+        href: "https://t.me/KudexKCCTH",
+      },
+      {
+        label: "русский",
+        href: "https://t.me/KudexKCCRU",
+      },
+
     ],
   },
   {
