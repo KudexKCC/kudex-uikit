@@ -2285,6 +2285,14 @@ var MenuLink = function (_a) {
     return React__default['default'].createElement(Tag, __assign({}, props, otherProps));
 };
 
+function SubIconElement(_a) {
+    var icon = _a.icon;
+    if (icon) {
+        var Icon = Icons[icon];
+        return React__default['default'].createElement(Icon, { width: "18px", mr: "8px" });
+    }
+    return null;
+}
 var Icons = IconModule;
 var Container$3 = styled__default['default'].div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"])));
 var PanelBody = function (_a) {
@@ -2299,6 +2307,7 @@ var PanelBody = function (_a) {
         if (entry.items) {
             return (React__default['default'].createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
                 entry.items.map(function (item) { return (React__default['default'].createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
+                    React__default['default'].createElement(SubIconElement, { icon: item.icon }),
                     React__default['default'].createElement(MenuLink, { href: item.href }, item.label))); })));
         }
         return (React__default['default'].createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
