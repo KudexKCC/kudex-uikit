@@ -28,3 +28,8 @@ export { default as EggHouseIcon } from "./EggHouse";
 export { default as BathIcon } from './Bath';
 export { default as ColoredKudex } from './ColoredKudex';
 export { default as ColoredLocker } from './ColoredLocker';
+export { default as GreyKudex } from './GreyKudex';
+export { default as GreyLocker } from './GreyLocker';
+export { default as BookIcon } from './Books';
+export { default as GitIcon } from './Github';
+export { default as MediumIcon } from './Medium';

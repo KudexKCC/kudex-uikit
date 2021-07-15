@@ -64,6 +64,10 @@ export const socials = [
         href: "https://t.me/KudexKCCDE",
       },
       {
+        label: "Español",
+        href: "https://t.me/KudexKCCES",
+      },
+      {
         label: "Français",
         href: "https://t.me/KudexKCCFR",
       },
