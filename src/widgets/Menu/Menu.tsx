@@ -68,6 +68,7 @@ const Menu: React.FC<NavProps> = ({
   setLang,
   currentLang,
   cakePriceUsd,
+  kcsPriceUsd,
   links,
   priceLink,
   profile,

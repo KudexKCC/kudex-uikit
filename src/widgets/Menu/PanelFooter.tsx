@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { PancakeRoundIcon, CogIcon, SvgProps } from "../../components/Svg";
+import { PancakeRoundIcon, CogIcon, SvgProps, KcsRoundIcon } from "../../components/Svg";
 import Text from "../../components/Text/Text";
 import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
@@ -60,6 +60,7 @@ const PanelFooter: React.FC<Props> = ({
   toggleTheme,
   isDark,
   cakePriceUsd,
+  kcsPriceUsd,
   currentLang,
   langs,
   setLang,
@@ -81,7 +82,15 @@ const PanelFooter: React.FC<Props> = ({
         {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
-            <Text color="textSubtle" bold>{`${cakePriceUsd.toFixed(5)} KCS`}</Text>
+            <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(2)}`}</Text>
+          </PriceLink>
+        ) : (
+          <Skeleton width={80} height={24} />
+        )}
+        {kcsPriceUsd ? (
+          <PriceLink href={priceLink} target="_blank">
+            <KcsRoundIcon width="24px" mr="8px" />
+            <Text color="textSubtle" bold>{`$${kcsPriceUsd.toFixed(2)}`}</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />

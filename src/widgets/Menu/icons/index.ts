@@ -33,3 +33,4 @@ export { default as GreyLocker } from './GreyLocker';
 export { default as BookIcon } from './Books';
 export { default as GitIcon } from './Github';
 export { default as MediumIcon } from './Medium';
+export { default as DiscordIcon } from './Discord';

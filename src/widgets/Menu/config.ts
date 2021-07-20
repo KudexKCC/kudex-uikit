@@ -94,6 +94,12 @@ export const socials = [
     icon: "TwitterIcon",
     href: "https://twitter.com/kudexkcc",
   },
+
+  {
+    label: "Discord",
+    icon: "DiscordIcon",
+    href: "https://discord.gg/U2mzH3yfzy",
+  },
 ];
 
 export const MENU_HEIGHT = 64;
