@@ -43,5 +43,7 @@ export { default as SwapVertIcon } from "./Icons/SwapVert";
 export { default as SyncAltIcon } from "./Icons/SyncAlt";
 export { default as WarningIcon } from "./Icons/Warning";
 export { default as KcsRoundIcon } from './Icons/Kcs';
+export { default as KcsKudIcon } from './Icons/KcsKud';
+
 export { default as Svg } from "./Svg";
 export type { SvgProps } from "./types";
