@@ -2389,13 +2389,14 @@ var PanelFooter = function (_a) {
                 React.createElement(Icon$l, null))));
     }
     return (React.createElement(Container$4, null,
-        React.createElement(SocialEntry, null,
+        React.createElement(SocialEntry, { className: "kudex-footer-prices" },
             cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React.createElement(Icon$v, { width: "24px", mr: "8px" }),
                 React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(4)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             kcsPriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React.createElement(Icon$J, { width: "24px", mr: "8px" }),
-                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + kcsPriceUsd.toFixed(2)))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
+                React.createElement(Text, { color: "textSubtle", bold: true }, "" + kcsPriceUsd.toFixed(5),
+                    " KCS"))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
         React.createElement(SettingsEntry, null,
             React.createElement(Dropdown, { position: "top-right", target: React.createElement(Button, { className: "language-btn", variant: "text", startIcon: React.createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
                     React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React.createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 

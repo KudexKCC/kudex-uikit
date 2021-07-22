@@ -78,7 +78,7 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
-      <SocialEntry>
+      <SocialEntry className="kudex-footer-prices">
         {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <PancakeRoundIcon width="24px" mr="8px" />
@@ -90,7 +90,7 @@ const PanelFooter: React.FC<Props> = ({
         {kcsPriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
             <KcsKudIcon width="24px" mr="8px" />
-            <Text color="textSubtle" bold>{`$${kcsPriceUsd.toFixed(2)}`}</Text>
+            <Text color="textSubtle" bold>{`${kcsPriceUsd.toFixed(5)}`} KCS</Text>
           </PriceLink>
         ) : (
           <Skeleton width={80} height={24} />
