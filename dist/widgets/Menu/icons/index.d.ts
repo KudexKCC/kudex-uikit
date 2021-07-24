@@ -36,3 +36,4 @@ export { default as MediumIcon } from './Medium';
 export { default as DiscordIcon } from './Discord';
 export { default as BedIcon } from './Bed';
 export { default as PillowIcon } from './Pillow';
+export { default as LaunchpadIcon } from './Launchpad';
