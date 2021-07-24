@@ -34,3 +34,5 @@ export { default as BookIcon } from './Books';
 export { default as GitIcon } from './Github';
 export { default as MediumIcon } from './Medium';
 export { default as DiscordIcon } from './Discord';
+export { default as BedIcon } from './Bed';
+export { default as PillowIcon } from './Pillow';
