@@ -36,7 +36,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   transform: translate3d(0, 0, 0);
 
   // Custom style: 
-  background-color: rgba(2,10,29, 0.25) !important;
+  background-color: rgba(2,10,29, 0.35) !important;
   // border-bottom: 3px solid rgba(84, 172, 147, 0.15) !important;
   border: none !important;
 `;
