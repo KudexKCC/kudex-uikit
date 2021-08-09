@@ -106,7 +106,7 @@ const PanelFooter: React.FC<Props> = ({
           <Skeleton width={80} height={24} />
         )}
       </SocialEntry>
-      <SettingsEntry>
+      <SettingsEntry className="kudex-footer-socials">
         {/* <Dropdown
           position="top-right"
           target={

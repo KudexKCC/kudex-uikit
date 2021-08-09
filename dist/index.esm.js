@@ -2658,7 +2658,7 @@ var PanelFooter = function (_a) {
                 React.createElement(Icon$J, { width: "24px", mr: "8px" }),
                 React.createElement(Text, { color: "textSubtle", bold: true }, "" + kcsPriceUsd.toFixed(5),
                     " KCS"))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
-        React.createElement(SettingsEntry, null,
+        React.createElement(SettingsEntry, { className: "kudex-footer-socials" },
             React.createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
                 var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
