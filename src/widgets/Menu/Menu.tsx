@@ -28,10 +28,14 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: ${({ theme }) => theme.nav.background};
+  // background-color: ${({ theme }) => theme.nav.background};
   border-bottom: 5px solid rgba(84, 172, 147, 0.3);
   z-index: 20;
   transform: translate3d(0, 0, 0);
+
+  // Custom style: 
+  background-color: rgba(2,10,29, 0.25) !important;
+  border-bottom: 3px solid rgba(84, 172, 147, 0.15) !important;
 `;
 
 const BodyWrapper = styled.div`

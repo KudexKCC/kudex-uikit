@@ -1564,7 +1564,7 @@ var shadows = {
     active: "0px 0px 0px 1px #0098A1, 0px 0px 4px 8px rgba(31, 199, 212, 0.4)",
     success: "0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
     warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
-    focus: "0px 0px 0px 1px #7645D9, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
+    focus: "0px 0px 0px 1px #54ac93, 0px 0px 0px 4px rgba(49, 208, 170, 0.5)",
     inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
 };
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
@@ -2420,7 +2420,7 @@ var templateObject_1$B;
 
 var Icons$1 = IconModule;
 Icons$1.MoonIcon; Icons$1.SunIcon; var LanguageIcon = Icons$1.LanguageIcon;
-var Container$4 = styled__default['default'].div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
+var Container$4 = styled__default['default'].div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  // background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n\n  // Custom style \n  background-color: rgba(2,10,29, 0.25) !important;\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  // background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n\n  // Custom style \n  background-color: rgba(2,10,29, 0.25) !important;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 });
@@ -2461,7 +2461,7 @@ var PanelFooter = function (_a) {
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 
-var StyledPanel = styled__default['default'].div(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  /* border-right: ", "; */\n  border-right: 5px solid rgba(84, 172, 147, 0.3);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 5px solid rgba(84, 172, 147, 0.3);\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  /* border-right: ", "; */\n  border-right: 5px solid rgba(84, 172, 147, 0.3);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 5px solid rgba(84, 172, 147, 0.3);\n    width: ", ";\n  }\n"])), function (_a) {
+var StyledPanel = styled__default['default'].div(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  position: fixed;\n  // padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  /* border-right: ", "; */\n  border-right: 5px solid rgba(84, 172, 147, 0.3);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 5px solid rgba(84, 172, 147, 0.3);\n    width: ", ";\n  }\n\n  // Custom style \n  background-color: rgba(2,10,29, 0.25) !important;\n  border: 3px solid rgba(84, 172, 147, 0.15) !important;\n\n  // Custom top value\n  top: ", ";\n"], ["\n  position: fixed;\n  // padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  /* border-right: ", "; */\n  border-right: 5px solid rgba(84, 172, 147, 0.3);\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 5px solid rgba(84, 172, 147, 0.3);\n    width: ", ";\n  }\n\n  // Custom style \n  background-color: rgba(2,10,29, 0.25) !important;\n  border: 3px solid rgba(84, 172, 147, 0.15) !important;\n\n  // Custom top value\n  top: ", ";\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? "80px" : 0);
 }, function (_a) {
@@ -2482,6 +2482,9 @@ var StyledPanel = styled__default['default'].div(templateObject_1$D || (template
 }, function (_a) {
     var isPushed = _a.isPushed;
     return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
+}, function (_a) {
+    var showMenu = _a.showMenu;
+    return (showMenu ? "67px" : 0);
 });
 var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu;
@@ -2726,7 +2729,7 @@ var Avatar = function (_a) {
 var templateObject_1$G, templateObject_2$e;
 
 var Wrapper$1 = styled__default['default'].div(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled__default['default'].nav(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: 5px solid rgba(84, 172, 147, 0.3);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: 5px solid rgba(84, 172, 147, 0.3);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
+var StyledNav = styled__default['default'].nav(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  // background-color: ", ";\n  border-bottom: 5px solid rgba(84, 172, 147, 0.3);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n\n  // Custom style: \n  background-color: rgba(2,10,29, 0.25) !important;\n  border-bottom: 3px solid rgba(84, 172, 147, 0.15) !important;\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  // background-color: ", ";\n  border-bottom: 5px solid rgba(84, 172, 147, 0.3);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n\n  // Custom style: \n  background-color: rgba(2,10,29, 0.25) !important;\n  border-bottom: 3px solid rgba(84, 172, 147, 0.15) !important;\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT, function (_a) {

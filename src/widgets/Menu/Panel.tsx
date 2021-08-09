@@ -12,7 +12,7 @@ interface Props extends PanelProps, PushedProps {
 
 const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   position: fixed;
-  padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
+  // padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
   top: 0;
   left: 0;
   display: flex;
@@ -33,6 +33,13 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
     border-right: 5px solid rgba(84, 172, 147, 0.3);
     width: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
+
+  // Custom style 
+  background-color: rgba(2,10,29, 0.25) !important;
+  border: 3px solid rgba(84, 172, 147, 0.15) !important;
+
+  // Custom top value
+  top: ${({ showMenu }) => (showMenu ? "67px" : 0)};
 `;
 
 const Panel: React.FC<Props> = (props) => {
