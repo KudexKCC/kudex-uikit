@@ -148,7 +148,7 @@ const Menu: React.FC<NavProps> = ({
           {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>
-      <BodyWrapper>
+      <BodyWrapper className="menu-bodywrapper">
         <Panel
           isPushed={isPushed}
           isMobile={isMobile}
