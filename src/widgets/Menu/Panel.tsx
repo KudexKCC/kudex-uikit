@@ -41,7 +41,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 
   // Custom top value
   // top: ${({ showMenu }) => (showMenu ? "67px" : 0)};
-  top: 65px;
+  top: 64px;
 `;
 
 const Panel: React.FC<Props> = (props) => {

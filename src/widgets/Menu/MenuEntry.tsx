@@ -59,6 +59,8 @@ const MenuEntry = styled.div<Props>`
     background-size: 200% 100%;
     font-weight: bold;
   }
+
+  transition: 0.75s;
 `;
 MenuEntry.defaultProps = {
   secondary: false,
