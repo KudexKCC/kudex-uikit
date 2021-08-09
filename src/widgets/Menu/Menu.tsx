@@ -136,7 +136,7 @@ const Menu: React.FC<NavProps> = ({
         priceLink={priceLink} 
       />
 
-      <StyledNav showMenu={showMenu}>
+      <StyledNav className="menu-stylednav" showMenu={showMenu}>
         <Logo
           isPushed={isPushed}
           togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
