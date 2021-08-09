@@ -35,7 +35,8 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
 
   // Custom style: 
   background-color: rgba(2,10,29, 0.25) !important;
-  border-bottom: 3px solid rgba(84, 172, 147, 0.15) !important;
+  // border-bottom: 3px solid rgba(84, 172, 147, 0.15) !important;
+  border: none !important;
 `;
 
 const BodyWrapper = styled.div`

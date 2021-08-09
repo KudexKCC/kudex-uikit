@@ -22,10 +22,17 @@ const Container = styled.div`
   flex: none;
   padding: 8px 4px;
   // background-color: ${({ theme }) => theme.nav.background};
-  border-top: solid 2px rgba(133, 133, 133, 0.1);
+  // border-top: solid 2px rgba(133, 133, 133, 0.1);
 
   // Custom style 
   background-color: rgba(2,10,29, 0.25) !important;
+
+  // Custom positioning
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10000;
+  border-top: none;
 `;
 
 const PriceLink = styled.a`
@@ -100,7 +107,7 @@ const PanelFooter: React.FC<Props> = ({
         )}
       </SocialEntry>
       <SettingsEntry>
-        <Dropdown
+        {/* <Dropdown
           position="top-right"
           target={
             <Button className="language-btn" variant="text" startIcon={<LanguageIcon color="textSubtle" width="24px" />}>
@@ -119,7 +126,7 @@ const PanelFooter: React.FC<Props> = ({
               {lang.language}
             </MenuButton>
           ))}
-        </Dropdown>
+        </Dropdown> */}
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
