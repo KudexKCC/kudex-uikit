@@ -7,6 +7,7 @@ import { useMatchBreakpoints } from "../../hooks";
 import Logo from "./Logo";
 import Panel from "./Panel";
 import UserBlock from "./UserBlock";
+import PanelFooter from "./PanelFooter";
 import { NavProps } from "./types";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
 import Avatar from "./Avatar";
@@ -120,6 +121,21 @@ const Menu: React.FC<NavProps> = ({
 
   return (
     <Wrapper>
+
+      <PanelFooter 
+        isPushed={isPushed}
+        pushNav={setIsPushed}
+        toggleTheme={toggleTheme}
+        isDark={isDark}
+        cakePriceUsd={cakePriceUsd}
+        kcsPriceUsd={kcsPriceUsd}
+        langs={langs}
+        links={links}
+        setLang={setLang}
+        currentLang={currentLang}
+        priceLink={priceLink} 
+      />
+
       <StyledNav showMenu={showMenu}>
         <Logo
           isPushed={isPushed}

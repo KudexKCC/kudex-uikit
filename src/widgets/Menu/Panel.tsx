@@ -41,7 +41,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 
   // Custom top value
   // top: ${({ showMenu }) => (showMenu ? "67px" : 0)};
-  top: 67px;
+  top: 65px;
 `;
 
 const Panel: React.FC<Props> = (props) => {
@@ -49,7 +49,7 @@ const Panel: React.FC<Props> = (props) => {
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
-      <PanelFooter {...props} />
+      
     </StyledPanel>
   );
 };
